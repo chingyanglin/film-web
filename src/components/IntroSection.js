@@ -1,8 +1,9 @@
 import React from "react";
 import home1 from "../img/home1.png";
+
 export default function IntroSection() {
   return (
-    <div>
+    <div className="about ">
       <div className="description">
         <div className="title">
           <div className="hide">
