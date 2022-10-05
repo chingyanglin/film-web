@@ -5,8 +5,10 @@
 }
 body {
     background: #1b1b1b;
+    font-family: 'inter',sans-serif;
 }
 button{
+    font-family: 'inter',sans-serif;
     background: transparent;
     cursor: pointer;
     padding: 1rem 2rem;
@@ -43,4 +45,5 @@ p{
     font-size: 1.4rem;
 }
 
-@import './IntroSection'
+@import './IntroSection';
+@import './Services'
