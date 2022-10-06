@@ -5,7 +5,7 @@ import "../src/Styles/App.scss";
 import Nav from "./components/Nav";
 import ContactUs from "./Pages/ContactUs";
 import OurWork from "./Pages/OurWork";
-import { Switch, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (

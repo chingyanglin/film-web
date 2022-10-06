@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 export default function Nav() {
   const StyledNav = styled.nav`
     min-height: 10vh;
@@ -30,19 +31,19 @@ export default function Nav() {
   return (
     <StyledNav>
       <h1>
-        <a href="#" id="logo">
+        <Link to="/" id="logo">
           Capture
-        </a>
+        </Link>
       </h1>
       <ul>
         <li>
-          <a href="#">About Us</a>
+          <Link to="/">About Us</Link>
         </li>
         <li>
-          <a href="#">Our Work</a>
+          <Link to="/work">Our Work</Link>
         </li>
         <li>
-          <a href="#">Contact Us</a>
+          <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
     </StyledNav>
