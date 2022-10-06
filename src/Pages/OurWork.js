@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import { useLocation, useParams } from "react-router-dom";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import athlete from "../img/athlete-small.png";
 import goodTimes from "../img/goodtimes-small.png";
 import theracer from "../img/theracer-small.png";
+import { MovieState } from "./movieState";
 export default function OurWork() {
   const Work = styled.div`
     min-height: 100vh;
@@ -26,6 +28,13 @@ export default function OurWork() {
       object-fit: cover;
     }
   `;
+
+  const url = useLocation();
+  const params = useParams();
+  const [movie, setMoive] = useState(MovieState);
+  console.log(movie[0].url);
+  console.log(url);
+  console.log(params);
   return (
     <Work>
       <Movie>
