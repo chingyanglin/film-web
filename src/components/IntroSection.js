@@ -1,5 +1,6 @@
 import React from "react";
 import home1 from "../img/home1.png";
+import { motion } from "framer-motion";
 
 export default function IntroSection() {
   return (
@@ -7,7 +8,12 @@ export default function IntroSection() {
       <div className="description">
         <div className="title">
           <div className="hide">
-            <h2>We work to make</h2>
+            <motion.h2
+              animate={{ opacity: 1, transition: { duration: 1.4 } }}
+              initial={{ opacity: 0 }}
+            >
+              We work to make
+            </motion.h2>
           </div>
           <div className="hide">
             <h2>

@@ -40,21 +40,21 @@ export default function OurWork() {
       <Movie>
         <h2>The Athlete</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/the-athlete">
           <img src={athlete} alt="The Athlete" />
         </Link>
       </Movie>
       <Movie>
         <h2>The Good Times</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/good-times">
           <img src={goodTimes} alt="The Good Times" />
         </Link>
       </Movie>
       <Movie>
         <h2>The Racer</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="/work/the-racer">
           <img src={theracer} alt="The Racer" />
         </Link>
       </Movie>

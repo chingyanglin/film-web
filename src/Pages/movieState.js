@@ -38,7 +38,7 @@ export const MovieState = () => {
       secondaryImg: goodtimes2,
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "This is Good Times",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
