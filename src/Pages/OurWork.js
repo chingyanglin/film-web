@@ -31,12 +31,6 @@ export default function OurWork() {
     }
   `;
 
-  const url = useLocation();
-  const params = useParams();
-  const [movie, setMoive] = useState(MovieState);
-  console.log(movie[0].url);
-  console.log(url);
-  console.log(params);
   return (
     <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit">
       <Movie>
