@@ -1,29 +1,24 @@
 import React from "react";
 import home1 from "../img/home1.png";
 import { motion } from "framer-motion";
-
+import { pageAnimation } from "../animations";
 export default function IntroSection() {
   return (
     <div className="about ">
       <div className="description">
-        <div className="title">
+        <motion.div>
           <div className="hide">
-            <motion.h2
-              animate={{ opacity: 1, transition: { duration: 1.4 } }}
-              initial={{ opacity: 0 }}
-            >
-              We work to make
+            <motion.h2>We work to make</motion.h2>
+          </div>
+          <div className="hide">
+            <motion.h2>
+              Your <span>dreams</span>
             </motion.h2>
           </div>
           <div className="hide">
-            <h2>
-              Your <span>dreams</span>
-            </h2>
+            <motion.h2>Come true.</motion.h2>
           </div>
-          <div className="hide">
-            <h2>Come true.</h2>
-          </div>
-        </div>
+        </motion.div>
         <p>
           Contact us for any photography and videography ideas that you have. we
           have prodfessional with amazing skills.

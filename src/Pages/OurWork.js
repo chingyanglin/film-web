@@ -6,8 +6,10 @@ import athlete from "../img/athlete-small.png";
 import goodTimes from "../img/goodtimes-small.png";
 import theracer from "../img/theracer-small.png";
 import { MovieState } from "./movieState";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animations";
 export default function OurWork() {
-  const Work = styled.div`
+  const Work = styled(motion.div)`
     min-height: 100vh;
     overflow: hidden;
     padding: 5rem 10rem;
@@ -36,7 +38,7 @@ export default function OurWork() {
   console.log(url);
   console.log(params);
   return (
-    <Work>
+    <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit">
       <Movie>
         <h2>The Athlete</h2>
         <div className="line"></div>

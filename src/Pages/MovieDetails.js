@@ -5,6 +5,8 @@ import { useLocation } from "react-router-dom";
 import { MovieState } from "./movieState";
 import MovieDisplay from "../components/MovieDisplay";
 import Award from "../components/Award";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animations";
 export default function MovieDetails() {
   const url = useLocation();
   const [movie, setMovie] = useState(MovieState);
@@ -34,8 +36,16 @@ export default function MovieDetails() {
       object-fit: cover;
     }
   `;
+  const Details = styled(motion.div)`
+    color: #fff;
+  `;
   return (
-    <div>
+    <Details
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <MovieDisplay
         title={renderMovie.title}
         maingImg={renderMovie.mainImg}
@@ -45,6 +55,6 @@ export default function MovieDetails() {
       <ImageDisplay>
         <img src={renderMovie.secondaryImg} alt="" />
       </ImageDisplay>
-    </div>
+    </Details>
   );
 }
